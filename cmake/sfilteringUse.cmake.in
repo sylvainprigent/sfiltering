@@ -1,0 +1,31 @@
+############################################################
+#
+#
+# Copyright (c) SFiltering 2020
+#
+# AUTHOR:
+# Sylvain Prigent 
+# 
+######################################################################
+## 
+### Commentary: 
+## 
+######################################################################
+## 
+### Change log:
+## 
+######################################################################
+
+if(NOT sfiltering_USE_FILE_INCLUDED)
+
+   set(sfiltering_USE_FILE_INCLUDED 1)
+
+   include_directories(${sfiltering_INCLUDE_DIRS})
+
+   link_directories(${sfiltering_LIBRARY_DIRS})
+
+   set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${sfiltering_CMAKE_DIR})
+
+   include(sfilteringDependencies)
+   
+endif(NOT sfiltering_USE_FILE_INCLUDED)

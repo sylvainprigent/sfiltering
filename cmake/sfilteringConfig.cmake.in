@@ -1,0 +1,16 @@
+IF(UNIX)
+  #SET(sfiltering_LIB_NAME "@sfiltering_LIBRARY_DIR@libsfiltering.a")
+  SET(sfiltering_LIB_NAME "libsfiltering.a")
+ELSEIF(WIN32)
+  #SET(sfiltering_LIB_NAME "@sfiltering_LIBRARY_DIR@sfiltering.lib")
+  SET(sfiltering_LIB_NAME "sfiltering.lib")
+ENDIF(UNIX)
+
+SET(sfiltering_INCLUDE_DIRS "@sfiltering_INCLUDE_DIR@")
+SET(sfiltering_LIBRARY_DIRS "@sfiltering_LIBRARY_DIR@")
+SET(sfiltering_LIBRARIES ${sfiltering_LIB_NAME})
+
+SET(sfiltering_USE_FILE "@sfiltering_USE_FILE@")
+SET(sfiltering_CMAKE_DIR "@sfiltering_CMAKE_DIR@")
+
+MARK_AS_ADVANCED(sfiltering_LIBRARIES sfiltering_LIBRARY_DIR sfiltering_INCLUDE_DIRS sfiltering_USE_FILE)
