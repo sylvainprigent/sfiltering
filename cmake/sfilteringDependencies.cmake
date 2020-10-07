@@ -17,9 +17,9 @@ if(${DOXYGEN_FOUND})
   set(sfiltering_USE_DOXYGEN 1)
 endif(${DOXYGEN_FOUND})
 
-if(${sfiltering_USE_OPENMP})
+if(${SL_USE_OPENMP})
   find_package(OpenMP REQUIRED)
-endif(${sfiltering_USE_OPENMP})  
+endif(${SL_USE_OPENMP})  
 
 ## ##################################################################
 ## score
