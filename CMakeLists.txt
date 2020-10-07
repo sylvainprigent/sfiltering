@@ -43,9 +43,9 @@ set(sfilteringProject_USE_DOXYGEN 0)
 ## OpemMP option
 ## #################################################################
 option(sfiltering_USE_OPENMP "use OpenMP" OFF)
-if (sfiltering_USE_OPENMP)
-    add_compile_definitions(sfilteringUSEOPENMP)
-endif(sfiltering_USE_OPENMP)
+if (SL_USE_OPENMP)
+    add_compile_definitions(SL_USE_OPENMP)
+endif(SL_USE_OPENMP)
 
 include(sfilteringDependencies)
 
